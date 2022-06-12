@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: addresses_table
+    description: customer addresses
+  - name: users_table
+    description: customer info
+  - name: events_table
+    description: web events
+  - name: orders_table
+    description: all order
+  - name: order_items_table
+    description: individual order items + quantity
+  - name: products_table
+    description: product info
+  - name: promos_table
+    description: discounts application
+    
+    

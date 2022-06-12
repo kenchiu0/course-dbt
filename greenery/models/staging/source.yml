@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+
+  - name: greenery
+    schema: public
+    database: dbt 
+
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+
+    #  freshness:
+    #  warn_after: {count: 24, period: hour}
+    #  error_after: {count: 48, period: hour}
+
+    tables:
+      - name: addresses
+        description: address of each customers         
+      - name: events
+        description: web events
+      - name: orders
+        description: customer orders
+      - name: order_items
+        description: order items
+      - name: products
+        description: product info
+      - name: promos
+        description: discounts
+      - name: users
+        description: customers
+      
+      
