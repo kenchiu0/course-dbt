@@ -61,7 +61,7 @@ For "MARKETING" and "PRODUCT" marts, I've pre-fix the dim and fact files for org
 
 However after creating the DAG image, I'm realizing that the models is not the most effecient since a few of the dim tables are repeated. I'll try to revise and create a more efficient/streamline set of models and tables.
 
-Lastly for "Marketing" mart, I think that department's main interest is "user related data". I'm using the STG_USERS to help create a main list of users, then LEFT JOIN the any relavent information that can be associated to a user. I use STG_USER instead of STG_ORDER mainly because I'm assuming there might exist users who had signed up for Greenery service, but not neccessary had made a purchase. (for reference, see m_fact_users.SQL)
+Lastly for "Marketing" mart, I think that department's main interest is "user related data". I'm using the STG_USERS to help create a main list of users, then LEFT JOIN the any relavent information that can be associated to a user. I use STG_USERS instead of STG_ORDERS mainly because I'm assuming there might exist users who had signed up for Greenery service, but not neccessary had made a purchase. (for reference, see m_fact_users.SQL)
 
 For "Products" mart, I think that department's main interest is "product related data".  I'm using the STG_PRODUCTS to help create a main list of products, then LEFT JOIN the any relavent information that can be associated to a product. I use STG_PRODUCTS instead of STG_ORDER or STG_ORDER_ITEMS mainly because I'm assuming there might exist products of which Greenery might not have sold yet to any user. (for reference, see p_fact_product.SQL)
 
