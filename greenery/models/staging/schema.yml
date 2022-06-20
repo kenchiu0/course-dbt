@@ -3,17 +3,58 @@ version: 2
 models:
   - name: stg_addresses
     description: customer addresses
+    columns:
+      - name: address_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
   - name: stg_users
     description: customer info
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
   - name: stg_events
     description: web events
+    columns:
+      - name: event_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
   - name: stg_orders
     description: all order
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
   - name: stg_order_items
     description: individual order items + quantity
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - not_null
   - name: stg_products
     description: product info
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
   - name: stg_promos
     description: discounts application
+    columns:
+      - name: promo_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
     
     

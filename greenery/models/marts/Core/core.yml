@@ -1,0 +1,69 @@
+version: 2
+
+models:
+
+  - name: dim_addresses
+    description: Address dimension view
+    columns:
+      - name: address_id
+        description: Unique address identifier
+        tests:
+          - not_null
+          - unique
+  - name: dim_events
+    description: event dimension view
+    columns:
+      - name: event_id
+        description: Unique events identifier
+        tests:
+          - not_null
+          - unique
+  - name: dim_order_items
+    description: order item dimension view
+    columns:
+      - name: order_id
+        description: unique order/product identifier
+        tests:
+          - not_null
+  - name: dim_orders
+    description: order dimension view
+    columns:
+      - name: order_id
+        description: unique order identifier
+        tests:
+          - not_null
+          - unique
+  - name: dim_products
+    description: product dimension view
+    columns:
+      - name: product_id
+        description: unique product identifier
+        tests:
+          - not_null
+          - unique
+  - name: dim_promos
+    description: promos dimension view
+    columns:
+      - name: promo_id
+        description: unique promo identifier
+        tests:
+          - not_null
+          - unique
+  - name: dim_users
+    description: users dimension view
+    columns:
+      - name: user_id
+        description: unique user identifier
+        tests:
+          - not_null
+          - unique
+  - name: fact_orders
+    description: fact order view. This ties together all user, address, promo and products infomration related to orders.
+    columns:
+      - name: order_id
+        description: unique order identifier
+        tests:
+          - not_null
+          - unique
+
+
