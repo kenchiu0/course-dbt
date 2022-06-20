@@ -1,19 +1,19 @@
 version: 2
 
 models:
-  - name: addresses_table
+  - name: stg_addresses
     description: customer addresses
-  - name: users_table
+  - name: stg_users
     description: customer info
-  - name: events_table
+  - name: stg_events
     description: web events
-  - name: orders_table
+  - name: stg_orders
     description: all order
-  - name: order_items_table
+  - name: stg_order_items
     description: individual order items + quantity
-  - name: products_table
+  - name: stg_products
     description: product info
-  - name: promos_table
+  - name: stg_promos
     description: discounts application
     
     
