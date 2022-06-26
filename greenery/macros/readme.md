@@ -1,4 +1,7 @@
-/*PART 1: Create new models to answer the first two questions (answer questions in README file)
+/*
+WEEK 3 Project:
+
+PART 1: Create new models to answer the first two questions (answer questions in README file)
 
 What is our overall conversion rate?
 
