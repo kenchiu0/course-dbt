@@ -65,5 +65,11 @@ models:
         tests:
           - not_null
           - unique
+  - name: fact_sessions
+    description: fact order view. This ties together all user, address, promo and products infomration related to orders.
+    columns:
+      - name: session_id
+        description: unique order identifier
+
 
 

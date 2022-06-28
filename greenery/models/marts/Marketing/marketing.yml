@@ -2,56 +2,6 @@ version: 2
 
 models:
 
-  - name: m_dim_addresses
-    description: Address dimension view
-    columns:
-      - name: address_id
-        description: Unique address identifier
-        tests:
-          - not_null
-          - unique
-
-
-
-  - name: m_dim_orders
-    description: order dimension view
-    columns:
-      - name: order_id
-        description: unique order identifier
-        tests:
-          - not_null
-          - unique
-
-
-  - name: m_dim_products
-    description: product dimension view
-    columns:
-      - name: product_id
-        description: unique product identifier
-        tests:
-          - not_null
-          - unique
-
-
-  - name: m_dim_promos
-    description: promos dimension view
-    columns:
-      - name: promo_id
-        description: unique promo identifier
-        tests:
-          - not_null
-          - unique
-
-
-  - name: m_dim_users
-    description: users dimension view
-    columns:
-      - name: user_id
-        description: unique user identifier
-        tests:
-          - not_null
-          - unique
-
 
   - name: m_fact_users
     description: fact user view. This grabs all users (who made orders or no orders) and pull together their address, orders (if any), promo and products information.
