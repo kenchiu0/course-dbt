@@ -1,0 +1,13 @@
+version: 2
+
+exposures:  
+  - name: Sessions Funnel Dashboard
+    description: >
+      Models that are important to the Sessions funnel dashboard
+    type: dashboard
+    maturity: high
+    owner:
+      name: Ken
+      email: kchiu@cubichealth.ca
+    depends_on:
+      - ref('fact_session_funnel')
